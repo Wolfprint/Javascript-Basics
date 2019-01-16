@@ -1,0 +1,12 @@
+[ 
+    {
+        "name" : "Alejandro Garcia",
+        "state" : "Jalisco",
+        "birth" : 1998
+    },
+    {
+        "name" : "Francisco Lopez",
+        "state" : "Jalisco",
+        "birth" : 1997
+    }
+]
