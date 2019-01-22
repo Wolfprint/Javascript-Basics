@@ -1,0 +1,106 @@
+h1{
+    color : deeppink;
+}
+
+h3{
+    color : cyan;
+}
+
+p{
+    border: solid 1px black;
+}
+
+div{
+    border: solid 1px black;
+    background-color: lightgrey;
+    /*
+        PADDING
+    
+        Represents the internal margin from where the element
+        inside the div will be place, by default it is 0.
+
+        There are 3 ways to use padding
+            1.- one value apply to all 4 sides
+                padding : 10px;
+
+            2.- two values, the first one apply to top and bottom,
+            the second one apply to left and right
+                padding : 10px 5px;
+
+            3.- four values, the first apply to top, the second to right,
+            the third for bottom and the forth for left
+                padding: 40px 20px 10px 5 px;
+    */
+    padding: 2.5% 5%;
+
+    /*
+        MARGIN
+    
+        Represents the external margin from where the element
+        outside the div will be place, by default it is 0.
+
+        There are 3 ways to use padding
+            1.- one value apply to all 4 sides
+                padding : 10px;
+
+            2.- two values, the first one apply to top and bottom,
+            the second one apply to left and right
+                padding : 10px 5px;
+
+            3.- four values, the first apply to top, the second to right,
+            the third for bottom and the forth for left
+                padding: 40px 20px 10px 5 px;
+    */
+    margin: 5%;
+
+}
+
+.orange{
+    color : orange;
+}
+
+.green{
+    color : greenyellow;
+}
+
+#paragraph1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#fox-image{
+    width: 100%;
+    height: 100%;
+}
+
+#youtubevideo{
+    width: 70%;
+    margin: 5% 15%;
+}
+
+li{
+    list-style: none;
+    background-image: url(https://www.culinaryschools.org/clipart/fruit/apple-clipart.gif);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    padding: 0 0 0 20px;
+    background-position: left center;
+}
+
+table{
+    border : solid 1px black;
+    font-family: 'Pinyon Script', cursive;
+    width : 100%;
+    border-collapse: collapse;
+}
+
+td,th{
+    text-align: center;
+    border: solid 1px white;
+    margin : 0;
+    padding : 1%;
+}
+
+tr:nth-child(even){
+    background-color : aliceblue;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Introduction to HTML and CSS</title>
+        <meta charset="utf-8"/>
+
+        <link rel="stylesheet" href="style.css">
+        <!--Add font family-->
+        <link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet"> 
+
+    </head>
+    <body>
+        <div>
+            <h1>Introduction to HTML and CSS</h1>
+            <h2>What about Javascript</h2>
+            <h3>What about Javascript</h3>
+            <h4>What about Javascript</h4>
+            <h5>What about Javascript</h5>
+            <h6>What about Javascript</h6>
+
+            <h5>JS is fun! </h5>
+            <p class="orange" id="paragraph1">
+                <img id="fox-image" src="fox-1284512_1920.jpg" alt="Fox">
+                Hello world
+                <br>
+                This should be fun. Remember that html does not respect 
+                the start of a new line on text.<br>
+                To make it happend you shoul use a <samp>&lt;br&gt;</samp> tag
+
+            </p>
+            
+            <P class="green">
+                We love JS!<br>
+                <!--iframes are used to embeded other website content and context in your web page, in this case a youtube video-->
+                <iframe id="youtubevideo" width="560" height="315" src="https://www.youtube.com/embed/_PYfXMzlZqc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </P>
+            <br>
+            <p class="orange">
+                If you loked this page <a href="#" target="_blank">Click here to join us</a>
+            </p>
+        </div>
+        <div>
+            <h5>A list of fruits</h5>
+            <ul>
+                <li>Pear</li>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Strawberry</li>
+            </ul>
+        </div>
+        
+        <div>
+            <h5>A table of things</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Name</th>
+                        <th>Company</th>
+                        <th>Birth</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark Zuckerberg</td>
+                        <td>Facebook</td>
+                        <td>1984</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Bill Gates</td>
+                        <td>Microsoft</td>
+                        <td>1955</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Steve Jobs</td>
+                        <td>Apple</td>
+                        <td>1955</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h5>Forms</h5>
+            <form method="POST" action="#">
+                <dl>
+                    <dt><label for="firstName">First Name</label></dt>
+                    <dd><input type="text" name="firstName" placeholder="First Name" size="50%" id="firstName"/></dd>
+
+                    <dt><label for="sureName">Sure Name</label></dt>
+                    <dd><input type="text" name="sureName" placeholder="Sure Name" size="50%" id="sureName"/></dd>
+
+                    <dt><label for="birthday">Birthday</label></dt>
+                    <dd><input type="date" name="birthday" placeholder="birthday" size="50%" id="birthday"/></dd>
+
+                    <dt><label for="gender">Gender</label></dt>
+                    <dd>
+                        <input type="radio" name="gender" value="male" checked> Male<br>
+                        <input type="radio" name="gender" value="female"> Female<br>
+                        <input type="radio" name="gender" value="other"> Other
+                    </dd>
+
+                    <dt><label for="email">Email</label></dt>
+                    <dd><input type="email" name="email" placeholder="Email" size="50%" maxlength="40" id="email"/></dd>
+
+                    <dt><label for="password">Password</label></dt>
+                    <dd><input type="password" name="password" placeholder="password" size="50%" maxlength="40" id="password1"/></dd>
+                
+                    <dt><label for="password">Confirm Password</label></dt>
+                    <dd><input type="password" name="Confirm Password" placeholder="password" size="50%" maxlength="40" id="password2"/></dd>
+
+                </dl>
+
+                <input type="submit" value="Sign In"/>
+            </form>
+        </div>
+
+        <script src="code.js"></script>
+    </body>
+</html>
