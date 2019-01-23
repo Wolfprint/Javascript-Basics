@@ -24,17 +24,30 @@
             |-> WindowEvent
             |       |-> ScrollEvent
             |       |       |->Scroll
+            |       |-> FocusEvents
+            |       |       |-> Focus
+            |       |       |-> Blur
 
 
-    This section will focus on keyboard events
+    This section will focus on focus events
 */
 
-console.log(document.body.scrollHeight);
-console.log(innerHeight);
-console.log(pageYOffset);
+var nameInput = document.getElementById("firstName");
+console.log(nameInput);
 
-addEventListener("scroll",function(event){
+// The focus event is activated when an element is selected
+nameInput.addEventListener("focus",function(event){
     console.log(event);
+    console.log(event.target.value);
+});
 
-    console.log(pageYOffset / (document.body.scrollHeight - innerHeight)*100);
+//The blur element is activated when an element is no longer selected
+nameInput.addEventListener("blur",function(event){
+    console.log("Leaving Name Input");
+    console.log(event);
+});
+
+addEventListener("blur",function(event){
+    console.log("window element has been avandond");
+    console.log(event.target);
 });

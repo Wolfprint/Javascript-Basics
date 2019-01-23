@@ -64,3 +64,10 @@ function fkeydown(event){
 function fkeyup(event){
     document.body.style.backgroundColor = "";
 }
+
+//make input value to upper case
+var nameInput = document.getElementById("firstName");
+
+nameInput.addEventListener("keyup",function(event){
+    this.value = this.value.toUpperCase();
+});
